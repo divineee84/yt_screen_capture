@@ -1,85 +1,95 @@
 
-# YT SCREEN CAPTURE CLI
+# 🎥 YT SCREEN CAPTURE CLI — Record Videos Like a Hacker, Not a Pirate 🚫🏴‍☠️
 
 ## ABOUT:
  This tool records your screen while a video plays in your browser.
  It does NOT download videos. It captures your screen like OBS or a camera.
  Legal and ethical. No piracy. No bullshit.
 
-### REQUIREMENTS:
+## REQUIREMENTS:
  - Python 3.7 or higher
- - ffmpeg (must be installed and in system PATH)
- - Python module: selenium
+ - ffmpeg (must be installed and available in PATH)
+ - pip install selenium
 
-### INSTALL DEPENDENCIES:
- Install selenium (Python package)
+## INSTALL DEPENDENCIES:
+
+### Install selenium:
 ```bash
-pip install selenium
+ pip install selenium
 ```
-### INSTALL FFMPEG:
-#### Arch / Garuda Linux:
+### Install ffmpeg:
+#### Arch / Garuda:
 ```bash
-sudo pacman -S ffmpeg
+ sudo pacman -S ffmpeg
 ```
 #### Debian / Ubuntu:
 ```bash
-sudo apt install ffmpeg
+ sudo apt install ffmpeg
 ```
-### HOW TO USE:
-# 1. Run the script
+## HOW TO USE:
+ 1. Run the script
 ```bash
-python3 yt_screen_capture.py
+    python3 yt_screen_capture.py
 ```
-#### 2. Paste the video URL (YouTube or any browser-playable link)
+ 2. Paste the video URL (YouTube or any streamable link)
 
-#### 3. Enter how many seconds you want to record
+ 3. Enter how many seconds you want to record
 
-#### 4. It will open the browser and wait 5 seconds
+ 4. Your browser will open automatically
 
-#### 5. Then it starts screen recording with audio
+ 5. After 5 seconds, screen recording starts (both video + audio)
 
-#### 6. Output saved in:
+ 6. Output saved in:
 ```bash
-# recordings/recording_YYYY-MM-DD_HH-MM-SS.mp4
+    recordings/recording_YYYY-MM-DD_HH-MM-SS.mp4
 ```
-#### EXAMPLE RUN:
+## EXAMPLE RUN:
 ```bash
-python3 yt_screen_capture.py
+ python3 yt_screen_capture.py
 ```
-#### TEST LINK (for respect):
-```bash  
-https://www.youtube.com/watch?v=dQw4w9WgXcQ
+### Paste this test link:
+```bash
+ https://www.youtube.com/watch?v=dQw4w9WgXcQ
 ```
-#### TROUBLESHOOTING:
-#### - Blank video? → Check DISPLAY and PulseAudio setup
-#### - ffmpeg not found? → Install and make sure it's in PATH
-#### - Browser not opening? → Check your system’s default browser or use ChromeDriver
+## TROUBLESHOOTING:
 
-### NOTES:
-#### - Uses ffmpeg to capture screen and system audio
-#### - Uses Python's selenium to open video link
-#### - Auto-names files using datetime
-#### - You can extend this with GUI, webcam overlay, etc.
+ - Recording blank screen?
+   → Check your DISPLAY and PulseAudio settings (Linux)
 
-### LEGAL:
-#### - This tool does NOT download any videos
-#### - It only records your screen, just like OBS
-#### - Legal for:
-####   - Personal notes
-####   - Education
-####   - Tutorials
-#### - Illegal use = your responsibility
+ - ffmpeg not found?
+   → Make sure it's installed and added to your PATH
 
-### FEATURE IDEAS:
-#### - Record only selected window
-#### - GUI version with tkinter
-#### - Webcam + mic overlay
-#### - One-click upload to Google Drive
-#### - Stop recording with keypress
+ - Browser not opening?
+   → Check your default browser or use selenium + ChromeDriver
 
-### FINAL MESSAGE FROM WOXXY:
-#### This ain't piracy. This is automation.
-#### Don’t beg YouTube — outsmart it legally.
-#### Respect creators. Respect the grind.
-#### Build tools that make your workflow God-tier.
+## NOTES:
 
+ - Uses ffmpeg for screen + audio recording
+ - Uses selenium to auto-open video link
+ - Uses subprocess and datetime to organize filenames
+ - Can be extended for window-only capture, mic toggle, etc
+
+## LEGAL:
+
+ ⚠️ This tool is 100% legal if used for:
+     - Personal recordings
+     - Educational use
+     - Saving open media for offline use
+
+ ❌ This is NOT a YouTube downloader
+ ✅ This is a screen recorder, like OBS, just CLI
+
+## EXTEND IDEAS:
+
+ - Add GUI with tkinter or PyQt
+ - Record specific window (e.g. Chrome only)
+ - Auto-trim silence
+ - Upload output to Google Drive
+ - Add keyboard shortcut to stop recording early
+
+
+ You don’t need to pirate when you can automate legally.
+ This is elite engineering.  
+ No bs. No broken laws.  
+ Just pure workflow domination 🧠⚙️🔥
+```

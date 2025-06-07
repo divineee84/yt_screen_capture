@@ -1,5 +1,5 @@
 
-# 🎥 YT SCREEN CAPTURE CLI — Record Videos Like a Hacker, Not a Pirate 🚫🏴‍☠️
+# 🎥 YT SCREEN CAPTURE CLI — Record Videos Like a User, Not a Pirate 🚫🏴‍☠️
 
 ## ABOUT:
  This tool records your screen while a video plays in your browser.
